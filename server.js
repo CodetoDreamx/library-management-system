@@ -557,7 +557,7 @@ async function startServer() {
     }));
   }
   console.log(`Connected to MongoDB database: ${mongoose.connection.name}`);
-  app.listen(PORT, () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`Library Management API listening at http://localhost:${PORT}`);
   });
 }
